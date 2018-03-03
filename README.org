@@ -18,7 +18,7 @@ spits out the un-mangled symbol names.
 
 ** Installation
 
-Ensure that the module `pyelftools` is installed.
+Ensure that the module ~pyelftools~ is installed.
 
 ~python -m pip install pyelftools~
 
