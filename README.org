@@ -1,0 +1,54 @@
+* So  Size Analyzer
+
+A python tool to analyze space usages of symbols in a .so file.
+
+** Usage:
+
+`python so_size_analyzer.py <path_to_so_file> <maxsymbols>`
+
+As, the following lists top 100 most space consuming symbols in the
+libnative.so
+
+`so_size_analyzer libnative.so 100`
+
+/NOTE/: Use debug version of so to the full symbol details.
+
+/NOTE/: Ensure that c++filt is found in the PATH so that the script
+spits out the un-mangled symbol names.
+
+** Installation
+
+Ensure that the module `pyelftools` is installed.
+
+`python -m pip install pyelftools` 
+
+** Screenshot:
+
+[[screenshots/screenshot.png]]
+
+
+This is the derivative of the original work by Jernej Virag.
+https://github.com/izacus/android-ndk-size-analyzer
+
+The original project is modified to remove unnecessary dependencies,
+to run on older version of python and some bug fixes. The repo also
+host c++filt for windows.
+
+** License:
+
+#+BEGIN_SRC 
+Copyright 2013 Jernej Virag.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+#+END_SRC
+
