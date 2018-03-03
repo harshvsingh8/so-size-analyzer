@@ -4,14 +4,14 @@ A python tool to analyze space usages of symbols in a .so file.
 
 ** Usage:
 
-`python so_size_analyzer.py <path_to_so_file> <maxsymbols>`
+~python so_size_analyzer.py <path_to_so_file> <maxsymbols>~
 
-As, the following lists top 100 most space consuming symbols in the
+The following lists top 100 most space consuming symbols in the
 libnative.so
 
-`so_size_analyzer libnative.so 100`
+~so_size_analyzer libnative.so 100~
 
-/NOTE/: Use debug version of so to the full symbol details.
+/NOTE/: Use debug version of SO to get the symbol name details.
 
 /NOTE/: Ensure that c++filt is found in the PATH so that the script
 spits out the un-mangled symbol names.
@@ -20,12 +20,11 @@ spits out the un-mangled symbol names.
 
 Ensure that the module `pyelftools` is installed.
 
-`python -m pip install pyelftools` 
+~python -m pip install pyelftools~
 
 ** Screenshot:
 
 [[screenshots/screenshot.png]]
-
 
 This is the derivative of the original work by Jernej Virag.
 https://github.com/izacus/android-ndk-size-analyzer
